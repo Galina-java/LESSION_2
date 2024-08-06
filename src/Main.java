@@ -98,6 +98,7 @@ public class Main {
             System.out.println("Сумма отрицательная");
         }
     }
+
     // Метод для печати цвета в зависимости от значения переменной value
     public static void printColor() {
         int value = 50;
@@ -109,20 +110,23 @@ public class Main {
             System.out.println("Зелёный");
         }
     }
+
     public static void compareNumbers() {
         int a = 5;
         int b = 3;
         if (a >= b) {
             System.out.println("a>=b");
-        }else {
+        } else {
             System.out.println("a < b");
         }
     }
+
     // Метод для проверки, лежит ли сумма двух чисел в пределах от 10 до 20 (включительно)
     public static boolean isSumInRange(int a, int b) {
         int sum = a + b;
         return sum >= 10 && sum <= 20;
     }
+
     // Метод для проверки, положительное ли число или отрицательное
     public static void checkNumber(int number) {
         if (number >= 0) {
@@ -131,20 +135,24 @@ public class Main {
             System.out.println("Отрицательное число");
         }
     }
+
     // Метод для проверки, является ли число отрицательным
     public static boolean isNegativeNumber(int number) {
         return number < 0;
     }
+
     //Метод для печати строки указанное количество раз
     public static void printString(String str, int times) {
         for (int i = 0; i < times; i++) {
             System.out.println(str);
         }
     }
+
     // Метод для определения, является ли год високосным
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
+
     // Метод для печати массива
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -152,6 +160,7 @@ public class Main {
         }
         System.out.println();
     }
+
     // Метод для печати массива
     public static void printArray1(int[] array1) {
         for (int i = 0; i < array1.length; i++) {
@@ -159,6 +168,7 @@ public class Main {
         }
         System.out.println();
     }
+
     // Метод для печати массива
     public static void printArray2(int[] array2) {
         for (int i = 0; i < array2.length; i++) {
@@ -166,6 +176,7 @@ public class Main {
         }
         System.out.println();
     }
+
     // Метод для печати двумерного массива
     public static void printArray3(int[][] array3) {
         for (int i = 0; i < array3.length; i++) {
@@ -175,6 +186,7 @@ public class Main {
             System.out.println();
         }
     }
+
     // Метод, создающий массив заданной длины и заполняющий его заданным значением
     public static int[] createArray(int len, int initialValue) {
         int[] array4 = new int[len];
@@ -183,6 +195,7 @@ public class Main {
         }
         return array4;
     }
+
     public static void printArray4(int[] array) {
         for (int value : array) {
             System.out.print(value + " ");
